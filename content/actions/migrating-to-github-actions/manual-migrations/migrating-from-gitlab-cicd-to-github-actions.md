@@ -105,7 +105,7 @@ linux_job:
 windows_job:
   runs-on: windows-latest
   steps:
-    - run: echo Hello, %USERNAME%!
+    - run: echo Hello, $env:USER!
 
 linux_job:
   runs-on: ubuntu-latest
